@@ -1,3 +1,12 @@
+# PolyMathTokenOffering
+
+Source file [../../contracts/PolyMathTokenOffering.sol](../../contracts/PolyMathTokenOffering.sol).
+
+<br />
+
+<hr />
+
+```javascript
 pragma solidity ^0.4.13;
 
 import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
@@ -197,3 +206,5 @@ contract PolyMathTokenOffering is Ownable {
     token.unpause();
   }
 }
+
+```

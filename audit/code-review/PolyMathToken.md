@@ -1,3 +1,12 @@
+# PolyMathToken
+
+Source file [../../contracts/PolyMathToken.sol](../../contracts/PolyMathToken.sol).
+
+<br />
+
+<hr />
+
+```javascript
 pragma solidity ^0.4.13;
 
 import 'zeppelin-solidity/contracts/token/PausableToken.sol';
@@ -48,3 +57,5 @@ contract PolyMathToken is PausableToken, BurnableToken {
   }
 
 }
+
+```

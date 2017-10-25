@@ -1,3 +1,12 @@
+# PolyMathVesting
+
+Source file [../../contracts/PolyMathVesting.sol](../../contracts/PolyMathVesting.sol).
+
+<br />
+
+<hr />
+
+```javascript
 pragma solidity ^0.4.13;
 
 import './PolyMathToken.sol';
@@ -43,3 +52,5 @@ contract PolyMathVesting {
      return block.timestamp;
    }
 }
+
+```
