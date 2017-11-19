@@ -1,0 +1,324 @@
+MODE            = 'test'
+GETHATTACHPOINT = 'ipc:./testchain/geth.ipc'
+PASSWORD        = 'testtest'
+CONTRACTSDIR    = '../../contracts'
+LIBSDIR         = '../zeppelin-contracts'
+TOKENSOL        = 'PolyMathToken.sol'
+TOKENJS         = 'PolyMathToken.js'
+SALESOL         = 'PolyMathTokenOffering.sol'
+SALEJS          = 'PolyMathTokenOffering.js'
+VESTINGSOL      = 'PolyMathVesting.sol'
+VESTINGJS       = 'PolyMathVesting.js'
+DEPLOYMENTDATA  = 'deploymentData.txt'
+INCLUDEJS       = './include.js'
+TEST1OUTPUT     = 'test1output.txt'
+TEST1RESULTS    = 'test1results.txt'
+CURRENTTIME     = '1511130085' 'Sun 19 Nov 2017 22:21:25 UTC'
+STARTTIME       = '1511130160' 'Sun 19 Nov 2017 22:22:40 UTC'
+ENDTIME         = '1511130205' 'Sun 19 Nov 2017 22:23:25 UTC'
+RELEASETIME     = '1511130265' 'Sun 19 Nov 2017 22:24:25 UTC'
+--- Differences ../../contracts/PolyMathToken.sol PolyMathToken.sol ---
+3,4c3,4
+< import 'zeppelin-solidity/contracts/token/PausableToken.sol';
+< import 'zeppelin-solidity/contracts/token/BurnableToken.sol';
+---
+> import 'zeppelin-contracts/token/PausableToken.sol';
+> import 'zeppelin-contracts/token/BurnableToken.sol';
+--- Differences ../../contracts/PolyMathTokenOffering.sol PolyMathTokenOffering.sol ---
+3,4c3,4
+< import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
+< import 'zeppelin-solidity/contracts/math/SafeMath.sol';
+---
+> import 'zeppelin-contracts/ownership/Ownable.sol';
+> import 'zeppelin-contracts/math/SafeMath.sol';
+--- Differences ../../contracts/PolyMathVesting.sol PolyMathVesting.sol ---
+
+solc, the solidity compiler commandline interface
+Version: 0.4.16+commit.d7661dd9.Darwin.appleclang
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.7.2-stable-1db4ecdc/darwin-amd64/go1.9
+coinbase: 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e
+at block: 572 (Mon, 20 Nov 2017 09:21:19 AEDT)
+ datadir: /Users/bok/Projects/PolymathCrowdsaleContractAudit/audit/test/testchain
+ modules: admin:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+> 
+true
+> 
+true
+> 
+true
+> 
+true
+> 
+> 
+undefined
+> 
+undefined
+> 
+> 
+undefined
+> 
+undefined
+> 
+> 
+undefined
+> 
+undefined
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+> 
+> 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       18.000000000000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433        0.000000000000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelist(1)
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelist(1)
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Whitelist(2)
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Presale Wallet
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #9 - Vesting Wallet
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                     0.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: Deploy Token Contract
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+...... 
+......... 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+......... 
+...... 
+... 
+undefined
+> 
+... 
+undefined
+> 
+RESULT: tokenAddress=0xb8c31f47dfba40162326aba12cd577ae5cb2ce99 status=0x1 Success gas=4000000 gasUsed=1336842 costETH=0.001336842 costUSD=0.44298933354 @ ETH/USD=331.37 gasPrice=1 gwei block=580 txIx=0 txId=0x8182e299f6329bfbd2944c356c64122fb8d80ab0152b794dd7a00b53b514344b @ 1511130105 Sun, 19 Nov 2017 22:21:45 UTC
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       24.001336842000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.001336842000000000   850000000.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelist(1)
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelist(1)
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Whitelist(2)
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000   150000000.000000000000000000 Account #9 - Presale Wallet
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #9 - Vesting Wallet
+RESULT: 11 0xb8c31f47dfba40162326aba12cd577ae5cb2ce99        0.000000000000000000           0.000000000000000000 PolyMathToken
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                            1000000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Deploy Token Contract
+1
+> 
+RESULT: tokenContractAddress=0xb8c31f47dfba40162326aba12cd577ae5cb2ce99
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+TypeError: 'proposedOwner' is not a function
+    at printTokenContractDetails (functions.js:414:50)
+    at <anonymous>:1:1
+
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: Deploy Sale Contract
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+...... 
+......... 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+......... 
+...... 
+... 
+undefined
+> 
+... 
+undefined
+> 
+RESULT: saleAddress=0x0a91add9e3e97057980da7826043aab2a2d4c35b status=0x1 Success gas=4000000 gasUsed=936798 costETH=0.000936798 costUSD=0.31042675326 @ ETH/USD=331.37 gasPrice=1 gwei block=582 txIx=0 txId=0xf26bb6b05414b2d9862d8fa334e22b74b540736454a1eae77b0a206a66e1dccf @ 1511130113 Sun, 19 Nov 2017 22:21:53 UTC
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       30.002273640000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.002273640000000000   850000000.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelist(1)
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelist(1)
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Whitelist(2)
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000   150000000.000000000000000000 Account #9 - Presale Wallet
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #9 - Vesting Wallet
+RESULT: 11 0xb8c31f47dfba40162326aba12cd577ae5cb2ce99        0.000000000000000000           0.000000000000000000 PolyMathToken
+RESULT: 12 0x0a91add9e3e97057980da7826043aab2a2d4c35b        0.000000000000000000           0.000000000000000000 PolyMathTokenOffering
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                            1000000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Deploy Sale Contract
+1
+> 
+RESULT: saleContractAddress=0x0a91add9e3e97057980da7826043aab2a2d4c35b
+RESULT: sale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: sale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+TypeError: 'proposedOwner' is not a function
+    at printSaleContractDetails (functions.js:253:49)
+    at <anonymous>:1:1
+
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: Deploy Vesting Contract
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+...... 
+......... 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+......... 
+...... 
+... 
+undefined
+> 
+... 
+undefined
+> 
+RESULT: vestingAddress=0x821ca8becdbfb00ca55e722908796a375bc2d538 status=0x1 Success gas=4000000 gasUsed=265379 costETH=0.000265379 costUSD=0.08793863923 @ ETH/USD=331.37 gasPrice=1 gwei block=584 txIx=0 txId=0x16ff7a40159c498ed3f1064761c0f00a05cb6f003ee9e9593bb3bbb044457ec8 @ 1511130119 Sun, 19 Nov 2017 22:21:59 UTC
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e       36.002539019000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.002539019000000000   850000000.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Multisig
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Whitelist(1)
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4 - Whitelist(1)
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5 - Whitelist(2)
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000   150000000.000000000000000000 Account #9 - Presale Wallet
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #9 - Vesting Wallet
+RESULT: 11 0xb8c31f47dfba40162326aba12cd577ae5cb2ce99        0.000000000000000000           0.000000000000000000 PolyMathToken
+RESULT: 12 0x0a91add9e3e97057980da7826043aab2a2d4c35b        0.000000000000000000           0.000000000000000000 PolyMathTokenOffering
+RESULT: 13 0x821ca8becdbfb00ca55e722908796a375bc2d538        0.000000000000000000           0.000000000000000000 PolyMathVesting
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                            1000000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Deploy Vesting Contract
+1
+> 
+RESULT: vestingContractAddress=0x821ca8becdbfb00ca55e722908796a375bc2d538
+TypeError: 'token' is not a function
+    at printVestingContractDetails (functions.js:491:44)
+    at <anonymous>:1:1
+
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
